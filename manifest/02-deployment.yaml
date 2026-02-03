@@ -4,7 +4,7 @@ metadata:
   name: auth-node-app
   namespace: argo-node-app
 spec:
-  replicas: 30
+  replicas: 3
   selector:
     matchLabels:
       app: auth-node-app
