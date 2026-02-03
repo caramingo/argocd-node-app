@@ -4,7 +4,7 @@ metadata:
   name: auth-node-app
   namespace: argo-node-app
 spec:
-  replicas: 4
+  replicas: 10
   selector:
     matchLabels:
       app: auth-node-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: auth-node-app
-          image: caramingo/auth_node_app:1.6.5.33
+          image: caramingo/auth_node_app:1.6.4.32
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
